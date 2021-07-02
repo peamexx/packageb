@@ -1,11 +1,39 @@
 // colors
-$white: #fff;
-$black: #333;
-$light-gray: #ededed;
-$pale-white: #e0f0ea;
-$down-blue: #95adbe;
-$loyal-blue: #574f7d;
-$midnight-purple: #3c2a4d;
+$white: rgb(255,255,255);
+$black: rgb(51,51,51);
+$lightgray: rgb(250,250,250);
+$gray: rgb(139,152,167);
+$darkgray: rgb(99,114,131);
+$yellow: rgb(200,219,50);
+$lightblue: rgb(101,146,253);
+$blue: rgb(95,89,247);
+$navy: rgb(52,48,144);
 
 // Breakpoints
-// $phone: 
+$phone: 350px;
+$tablet: 768px;
+$pc: 1366px;
+
+// font-size
+$font-lg: 3rem;
+$font-md3: 2rem;
+$font-md2: 1.6rem;
+$font-md1: 1.2rem;
+$font-sm: 0.8rem;
+
+// emogi-apple
+@mixin emogi-apple($x, $y) {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://unpkg.com/emoji-datasource-apple@5.0.1/img/apple/sheets-256/64.png');
+    background-size: 5700% 5700%;
+    background-position: $x $y;
+}
+
+// flex
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
