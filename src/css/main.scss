@@ -1,0 +1,11 @@
+// import scss
+@import 'reset', 'variables';
+
+// import font
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+// common set
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+

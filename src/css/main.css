@@ -1,0 +1,32 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  margin: auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+input,
+button {
+  outline: none;
+  border: 0;
+}
+
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+/*# sourceMappingURL=main.css.map */
