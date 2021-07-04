@@ -191,8 +191,8 @@ header nav .menu-close {
   header nav .menu-close {
     display: block;
     position: absolute;
-    top: 22px;
-    right: 48px;
+    top: 25px;
+    right: 40px;
     color: #8b98a7;
     font-size: 2rem;
     cursor: pointer;
@@ -227,7 +227,7 @@ header nav .menu-open {
     left: 48%;
   }
   .visual .inner ul li:nth-child(2) {
-    margin-bottom: 52px !important;
+    margin-bottom: 36px !important;
   }
   .visual .inner p,
   .visual .inner ul li {
@@ -590,6 +590,12 @@ aside .popup {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 101;
+}
+
+@media screen and (max-width: 768px) {
+  aside .popup {
+    width: 80%;
+  }
 }
 
 aside .popup .top {
