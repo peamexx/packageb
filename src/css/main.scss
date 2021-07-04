@@ -263,7 +263,6 @@ header {
     }
     .inner {
         @include flex;
-        width: 80%;
         > div {
             width: 50%;
             &:first-child {
@@ -486,6 +485,7 @@ aside {
             height: 500px;
             margin-top: 20px;
             padding: 10px;
+            overflow: hidden;
             overflow-y: scroll;
         }
     }
