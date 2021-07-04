@@ -36,6 +36,18 @@ button {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
+.on {
+  display: block !important;
+}
+
+.opacity-on {
+  opacity: 1 !important;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
 p {
   line-height: 1.5;
   word-break: keep-all;
@@ -136,11 +148,11 @@ header nav ul {
 
 @media screen and (max-width: 768px) {
   header nav ul {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 60%;
     height: 100vh;
     padding-top: 100px;
     background-color: white;
@@ -149,7 +161,7 @@ header nav ul {
   header nav ul li a {
     display: block;
     padding: 20px 10px;
-    color: #333333;
+    color: #333333 !important;
   }
 }
 
@@ -165,16 +177,22 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  header nav .menu-v {
+    display: none;
+  }
+}
+
 header nav .menu-close {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   header nav .menu-close {
-    display: none;
+    display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 22px;
+    right: 48px;
     color: #8b98a7;
     font-size: 2rem;
     cursor: pointer;
@@ -183,9 +201,16 @@ header nav .menu-close {
 }
 
 header nav .menu-open {
+  display: none;
   color: white;
   cursor: pointer;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header nav .menu-open {
+    display: block;
+  }
 }
 
 .visual {
@@ -551,6 +576,10 @@ header nav .menu-open {
   }
 }
 
+aside {
+  display: none;
+}
+
 aside .popup {
   width: 500px;
   padding: 30px;
@@ -610,6 +639,7 @@ footer ul {
 footer ul li {
   padding: 0 10px;
   position: relative;
+  cursor: pointer;
 }
 
 footer ul li:first-child {

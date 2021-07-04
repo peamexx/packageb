@@ -10,6 +10,18 @@
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
+.on {
+    display: block !important;
+}
+
+.opacity-on {
+    opacity: 1 !important;
+}
+
+.scroll-hidden {
+    overflow: hidden;
+}
+
 p {
     line-height: 1.5;
     word-break: keep-all;
@@ -85,11 +97,11 @@ header {
         ul {
             display: flex;
             @media screen and (max-width: $tablet){
-                display: none;
+                display: block;
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 50%;
+                width: 60%;
                 height: 100vh;
                 padding-top: 100px;
                 background-color: $white;
@@ -98,7 +110,7 @@ header {
                     a {
                         display: block;
                         padding: 20px 10px;
-                        color: $black;
+                        color: $black !important;
                     }
                 }
             }
@@ -114,13 +126,18 @@ header {
                 }
             }
         }
+        .menu-v {
+            @media screen and (max-width: $tablet){
+                display: none;
+            }
+        }
         .menu-close {
             display: none;
             @media screen and (max-width: $tablet){
-                display: none;
+                display: block;
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 22px;
+                right: 48px;
                 color: $gray;
                 font: {
                     size: $font-md3;
@@ -130,10 +147,14 @@ header {
             }
         }
         .menu-open {
+            display: none;
             color: $white;
             cursor: pointer;
             font: {
                 size: $font-md3;
+            }
+            @media screen and (max-width: $tablet){
+                display: block;
             }
         }
     }
@@ -434,6 +455,7 @@ header {
 }
 
 aside {
+    display: none;
     .popup {
         width: 500px;
         padding: 30px;
@@ -481,6 +503,7 @@ footer {
         li {
             padding: 0 10px;
             position: relative;
+            cursor: pointer;
             &:first-child {
                 padding-left: 0;
             }
