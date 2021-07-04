@@ -52,13 +52,13 @@ h3 {
 
 @media screen and (max-width: 768px) {
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
 h4 {
   word-break: keep-all;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .inner {
@@ -73,23 +73,33 @@ h4 {
 }
 
 .emogi-box {
-  width: 350px;
-  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 350px;
   margin: auto;
-  padding: 20px;
-  padding-left: 100px;
+  padding: 15px;
   border-radius: 20px;
-  background-color: #fafafa;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px 0px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px 0px;
-  line-height: 50px;
-  position: relative;
+  background-color: #fafafa;
 }
 
-.emogi-box .emogi {
-  position: absolute;
-  top: 20px;
-  left: 25px;
+.emogi-box p {
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .emogi-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 header {
@@ -124,18 +134,6 @@ header nav ul {
   display: flex;
 }
 
-header nav ul li {
-  padding: 0 1.5rem;
-}
-
-header nav ul li a {
-  color: white;
-}
-
-header nav ul li a:hover {
-  font-weight: bold;
-}
-
 @media screen and (max-width: 768px) {
   header nav ul {
     display: none;
@@ -153,6 +151,18 @@ header nav ul li a:hover {
     padding: 20px 10px;
     color: #333333;
   }
+}
+
+header nav ul li {
+  padding: 0 1.5rem;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header nav ul li a:hover {
+  font-weight: bold;
 }
 
 header nav .menu-close {
@@ -184,6 +194,22 @@ header nav .menu-open {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .visual {
+    height: 450px;
+  }
+  .visual .inner ul {
+    left: 48%;
+  }
+  .visual .inner ul li:nth-child(2) {
+    margin-bottom: 52px !important;
+  }
+  .visual .inner p,
+  .visual .inner ul li {
+    font-size: 2rem;
+  }
+}
+
 .visual .inner {
   height: 100%;
   position: relative;
@@ -199,6 +225,12 @@ header nav .menu-open {
           transform: translate(-50%, -50%);
   font-size: 3rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .visual .inner p {
+    font-size: 1.4rem !important;
+  }
 }
 
 .visual .inner ul {
@@ -218,45 +250,41 @@ header nav .menu-open {
   margin-bottom: 85px;
 }
 
-.visual .inner span {
-  color: #5f59f7;
+@media screen and (max-width: 768px) {
+  .visual .inner ul li {
+    font-size: 1.4rem !important;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .visual {
-    height: 450px;
-  }
-  .visual .inner ul {
-    left: 48%;
-  }
-  .visual .inner ul li:nth-child(2) {
-    margin-bottom: 52px !important;
-  }
-  .visual .inner p,
-  .visual .inner ul li {
-    font-size: 2rem;
-  }
+.visual .inner span {
+  color: #5f59f7;
 }
 
 .title {
   padding: 120px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    padding: 50px 0;
+  }
+}
+
 .title h3 {
   text-align: center;
 }
 
-.title p {
+.title .emogi-box {
   margin-bottom: 20px;
 }
 
-.title p .emogi {
+.title .emogi-box .emogi {
   display: inline-block;
   width: 50px;
   height: 50px;
   background-image: url("https://unpkg.com/emoji-datasource-apple@5.0.1/img/apple/sheets-256/64.png");
   background-size: 5700% 5700%;
-  background-position: 67.7% 64.3%;
+  background-position: 67.9% 64.3%;
 }
 
 .title .emogi-box2 {
@@ -269,7 +297,7 @@ header nav .menu-open {
   height: 50px;
   background-image: url("https://unpkg.com/emoji-datasource-apple@5.0.1/img/apple/sheets-256/64.png");
   background-size: 5700% 5700%;
-  background-position: 69.6% 64.3%;
+  background-position: 69.7% 64.3%;
 }
 
 .service > section {
@@ -278,6 +306,12 @@ header nav .menu-open {
 
 .service > section:nth-child(2n-1) {
   background-color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .service > section {
+    padding: 50px 0;
+  }
 }
 
 .service .inner {
@@ -290,11 +324,23 @@ header nav .menu-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+}
+
+.service .inner > div {
+  width: 50%;
+}
+
+.service .inner > div:first-child {
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .service .inner {
     display: block;
+  }
+  .service .inner > div {
+    width: 100%;
   }
 }
 
@@ -302,8 +348,11 @@ header nav .menu-open {
   color: #5f59f7;
 }
 
-.service .text-v {
-  width: 60%;
+@media screen and (max-width: 768px) {
+  .service .text-v {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .service .text-v h4 {
@@ -315,18 +364,25 @@ header nav .menu-open {
 }
 
 @media screen and (max-width: 768px) {
-  .service .text-v {
-    width: 100%;
-    text-align: center;
+  .service .text-v p {
+    font-size: 1rem;
   }
 }
 
 .service .sec1 .des-v {
-  width: 40%;
-  height: 300px;
+  width: 310px;
+  height: 278px;
   background-image: url(../images/iphone-mockup-top.png);
   background-size: 100%;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .service .sec1 .des-v {
+    width: 280px;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 
 .service .sec1 .des-v dl {
@@ -336,6 +392,12 @@ header nav .menu-open {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .service .sec1 .des-v dl {
+    font-size: 0.8rem;
+  }
 }
 
 .service .sec1 .des-v dl dt {
@@ -352,29 +414,30 @@ header nav .menu-open {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .service .sec1 .des-v {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
-.service .sec2 .des-v p .emogi {
+.service .sec2 .des-v .emogi {
   display: inline-block;
   width: 50px;
   height: 50px;
   background-image: url("https://unpkg.com/emoji-datasource-apple@5.0.1/img/apple/sheets-256/64.png");
   background-size: 5700% 5700%;
-  background-position: 25% 19.7%;
+  background-position: 25% 19.6%;
 }
 
 @media screen and (max-width: 768px) {
   .service .sec2 .des-v {
     margin-bottom: 20px;
   }
+  .service .sec2 .des-v p {
+    font-size: 0.8rem;
+  }
 }
 
-.service .sec3 li {
+.service .sec3 .des-v {
+  text-align: center;
+}
+
+.service .sec3 .des-v li {
+  display: inline-block;
   padding: 5px;
   background-color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px 0px;
@@ -382,8 +445,14 @@ header nav .menu-open {
   text-align: center;
 }
 
-.service .sec3 li:first-child {
+.service .sec3 .des-v li:first-child {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .service .sec3 .des-v li {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -393,7 +462,8 @@ header nav .menu-open {
 }
 
 .service .sec4 .des-v p {
-  width: 350px;
+  max-width: 350px;
+  margin: auto;
   padding: 10px;
   padding-left: 50px;
   border-radius: 5px;
@@ -403,8 +473,9 @@ header nav .menu-open {
 
 @media screen and (max-width: 768px) {
   .service .sec4 .des-v p {
-    margin: auto;
+    width: auto;
     margin-bottom: 20px;
+    font-size: 0.8rem;
   }
 }
 
@@ -445,6 +516,7 @@ header nav .menu-open {
 
 .banner .inner p {
   color: white;
+  word-break: keep-all;
   font-size: 1.2rem;
 }
 
@@ -461,6 +533,22 @@ header nav .menu-open {
 
 .banner .inner button:hover {
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 30px 0;
+  }
+  .banner .inner {
+    display: block;
+  }
+  .banner .inner p {
+    font-size: 1rem;
+  }
+  .banner .inner button {
+    margin-top: 10px;
+    padding: 10px 15px;
+  }
 }
 
 aside .popup {
@@ -485,7 +573,7 @@ aside .popup .top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 aside .popup .top span {
@@ -506,11 +594,17 @@ footer {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 30px 0;
+    font-size: 0.8rem;
+  }
+}
+
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 350px;
 }
 
 footer ul li {
