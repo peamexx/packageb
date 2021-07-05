@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>기억해줄께! PackageB:패키집 : 로그인</title>
+    <title>기억해줄께! PackageB:패키집 : 서비스 안내</title>
     <!-- 해당 사이트는 포트폴리오용 사이트입니다 -->
     <!-- 진짜 존재하는 사이트가 아닙니다 -->
     <link rel="stylesheet" href="./src/css/main.css">
@@ -33,18 +33,17 @@
             </nav>
         </div>
     </header>
-    <section class="login">
-        <div class="box">
-            <h3>로그인</h3>
+    <section class="ask">
+        <div class="inner">
+            <h3>문의하기</h3>
+            <p>궁금하신점이나 불편한 점, 개선 방안, 의문점 등 다양한 전하고 싶은 이야기가 있으시다면 언제든지 연락주세요.</p>
             <form action="">
-                <label for="id">아이디</label><input name="id" type="text" placeholder="packageb" required="required">
-                <label for="pw">비밀번호</label><input name="pw" type="password" required="required">
-                <button type="submit" onclick="return false;">로그인</button>
+                <label for="email">이메일<span>*</span></label><input type="email" name="email" required="required"><br />
+                <label for="username">성함<span>*</span></label><input type="text" name="username" required="required"><br />
+                <label for="number">연락처<span>*</span></label><input type="text" name="number" required="required" placeholder="'-' 없이 숫자만 입력해주세요."><br />
+                <label for="text" class="text">문의 내용<span>*</span></label><textarea name="" id="" cols="30" rows="10"></textarea><br />
+                <button type="submit">보내기</button>
             </form>
-            <ul>
-                <li><a href="#" onclick="alert('서브 페이지를 제작하지 않았습니다')">아이디/비밀번호 찾기</a></li>
-                <li><a href="" onclick="alert('서브 페이지를 제작하지 않았습니다')">회원가입</a></li>
-            </ul>
         </div>
     </section>
     <aside class="popup-tos">
@@ -94,7 +93,8 @@
                 <span class="popup-close material-icons material-icons-outlined">highlight_off</span>
             </div>
             <div class="contents">
-                <p><b>업비트 개인정보처리방침</b><br /><br /><b>제 1조 (목적)</b><br />이 약관은 두나무 주식회사(이하 "회사"라 합니다)가 제공하는 업비트 및 업비트 관련 제반
+                <p><b>업비트 개인정보처리방침</b><br /><br /><b>제 1조 (목적)</b><br />이 약관은 두나무 주식회사(이하 "회사"라 합니다)가 제공하는 업비트 및 업비트 관련
+                    제반
                     서비스의 이용에 대해 회사와 회원의 권리, 의무 및 책임 사항, 기타 필요한 사항을 규정함을 목적으로 합니다.<br /><br />
                     <b>제 2조 (정의)</b><br />
                     이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br /><br />

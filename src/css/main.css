@@ -76,6 +76,12 @@ h4 {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
 .inner {
   width: 1000px;
   margin: auto;
@@ -211,34 +217,34 @@ header nav .menu-open {
   }
 }
 
-.visual {
+section.container .visual {
   height: 600px;
   background-color: #343090;
   color: white;
 }
 
 @media screen and (max-width: 768px) {
-  .visual {
+  section.container .visual {
     height: 450px;
   }
-  .visual .inner ul {
+  section.container .visual .inner ul {
     left: 48%;
   }
-  .visual .inner ul li:nth-child(2) {
+  section.container .visual .inner ul li:nth-child(2) {
     margin-bottom: 36px !important;
   }
-  .visual .inner p,
-  .visual .inner ul li {
+  section.container .visual .inner p,
+  section.container .visual .inner ul li {
     font-size: 2rem;
   }
 }
 
-.visual .inner {
+section.container .visual .inner {
   height: 100%;
   position: relative;
 }
 
-.visual .inner p {
+section.container .visual .inner p {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -251,12 +257,12 @@ header nav .menu-open {
 }
 
 @media screen and (max-width: 768px) {
-  .visual .inner p {
+  section.container .visual .inner p {
     font-size: 1.4rem !important;
   }
 }
 
-.visual .inner ul {
+section.container .visual .inner ul {
   position: absolute;
   top: 50%;
   left: 48.5%;
@@ -264,44 +270,44 @@ header nav .menu-open {
           transform: translate(-50%, -50%);
 }
 
-.visual .inner ul li {
+section.container .visual .inner ul li {
   font-size: 3rem;
   font-weight: bold;
 }
 
-.visual .inner ul li:nth-child(2) {
+section.container .visual .inner ul li:nth-child(2) {
   margin-bottom: 85px;
 }
 
 @media screen and (max-width: 768px) {
-  .visual .inner ul li {
+  section.container .visual .inner ul li {
     font-size: 1.4rem !important;
   }
 }
 
-.visual .inner span {
+section.container .visual .inner span {
   color: #5f59f7;
 }
 
-.title {
+section.container .title {
   padding: 120px 0;
 }
 
 @media screen and (max-width: 768px) {
-  .title {
+  section.container .title {
     padding: 50px 0;
   }
 }
 
-.title h3 {
+section.container .title h3 {
   text-align: center;
 }
 
-.title .emogi-box {
+section.container .title .emogi-box {
   margin-bottom: 20px;
 }
 
-.title .emogi-box .emogi {
+section.container .title .emogi-box .emogi {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -310,11 +316,11 @@ header nav .menu-open {
   background-position: 67.9% 64.3%;
 }
 
-.title .emogi-box2 {
+section.container .title .emogi-box2 {
   margin-bottom: 50px;
 }
 
-.title .emogi-box2 .emogi {
+section.container .title .emogi-box2 .emogi {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -323,21 +329,21 @@ header nav .menu-open {
   background-position: 69.7% 64.3%;
 }
 
-.service > section {
+section.container .service > section {
   padding: 120px 0;
 }
 
-.service > section:nth-child(2n-1) {
+section.container .service > section:nth-child(2n-1) {
   background-color: #fafafa;
 }
 
 @media screen and (max-width: 768px) {
-  .service > section {
+  section.container .service > section {
     padding: 60px 0;
   }
 }
 
-.service .inner {
+section.container .service .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,49 +355,49 @@ header nav .menu-open {
           align-items: center;
 }
 
-.service .inner > div {
+section.container .service .inner > div {
   width: 50%;
 }
 
-.service .inner > div:first-child {
+section.container .service .inner > div:first-child {
   margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .service .inner {
+  section.container .service .inner {
     display: block;
   }
-  .service .inner > div {
+  section.container .service .inner > div {
     width: 100%;
   }
 }
 
-.service h4 {
+section.container .service h4 {
   color: #5f59f7;
 }
 
 @media screen and (max-width: 768px) {
-  .service .text-v {
+  section.container .service .text-v {
     width: 100%;
     text-align: center;
   }
 }
 
-.service .text-v h4 {
+section.container .service .text-v h4 {
   margin-bottom: 10px;
 }
 
-.service .text-v p {
+section.container .service .text-v p {
   font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
-  .service .text-v p {
+  section.container .service .text-v p {
     font-size: 1rem;
   }
 }
 
-.service .sec1 .des-v {
+section.container .service .sec1 .des-v {
   width: 310px;
   height: 278px;
   background-image: url(../images/iphone-mockup-top.png);
@@ -400,14 +406,14 @@ header nav .menu-open {
 }
 
 @media screen and (max-width: 768px) {
-  .service .sec1 .des-v {
+  section.container .service .sec1 .des-v {
     width: 280px;
     margin: auto;
     margin-top: 20px;
   }
 }
 
-.service .sec1 .des-v dl {
+section.container .service .sec1 .des-v dl {
   width: 70%;
   position: absolute;
   top: 60%;
@@ -417,17 +423,17 @@ header nav .menu-open {
 }
 
 @media screen and (max-width: 768px) {
-  .service .sec1 .des-v dl {
+  section.container .service .sec1 .des-v dl {
     font-size: 0.8rem;
   }
 }
 
-.service .sec1 .des-v dl dt {
+section.container .service .sec1 .des-v dl dt {
   display: inline-block;
   width: 40%;
 }
 
-.service .sec1 .des-v dl dd {
+section.container .service .sec1 .des-v dl dd {
   display: inline-block;
   width: calc(60% - 5px);
   margin-bottom: 10px;
@@ -436,7 +442,7 @@ header nav .menu-open {
   color: white;
 }
 
-.service .sec2 .des-v .emogi {
+section.container .service .sec2 .des-v .emogi {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -446,19 +452,19 @@ header nav .menu-open {
 }
 
 @media screen and (max-width: 768px) {
-  .service .sec2 .des-v {
+  section.container .service .sec2 .des-v {
     margin-bottom: 20px;
   }
-  .service .sec2 .des-v p {
+  section.container .service .sec2 .des-v p {
     font-size: 0.8rem;
   }
 }
 
-.service .sec3 .des-v {
+section.container .service .sec3 .des-v {
   text-align: center;
 }
 
-.service .sec3 .des-v li {
+section.container .service .sec3 .des-v li {
   display: inline-block;
   padding: 5px;
   background-color: white;
@@ -467,23 +473,23 @@ header nav .menu-open {
   text-align: center;
 }
 
-.service .sec3 .des-v li:first-child {
+section.container .service .sec3 .des-v li:first-child {
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
-  .service .sec3 .des-v li {
+  section.container .service .sec3 .des-v li {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .service .sec3 .text-v {
+  section.container .service .sec3 .text-v {
     margin-bottom: 20px;
   }
 }
 
-.service .sec4 .des-v p {
+section.container .service .sec4 .des-v p {
   max-width: 350px;
   margin: auto;
   padding: 10px;
@@ -494,14 +500,14 @@ header nav .menu-open {
 }
 
 @media screen and (max-width: 768px) {
-  .service .sec4 .des-v p {
+  section.container .service .sec4 .des-v p {
     width: auto;
     margin-bottom: 20px;
     font-size: 0.8rem;
   }
 }
 
-.service .sec4 .des-v p .emogi {
+section.container .service .sec4 .des-v p .emogi {
   width: 25px !important;
   height: 25px !important;
   position: absolute;
@@ -515,16 +521,16 @@ header nav .menu-open {
   background-position: 23.2% 50%;
 }
 
-.service .sec4 .des-v p .text {
+section.container .service .sec4 .des-v p .text {
   color: #fafafa;
 }
 
-.banner {
+section.container .banner {
   padding: 50px 0;
   background-color: #5f59f7;
 }
 
-.banner .inner {
+section.container .banner .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,38 +542,47 @@ header nav .menu-open {
           align-items: center;
 }
 
-.banner .inner p {
+section.container .banner .inner p {
   color: white;
   word-break: keep-all;
   font-size: 1.2rem;
 }
 
-.banner .inner p span {
+section.container .banner .inner p span {
+  color: #c8db32;
   text-decoration: underline;
 }
 
-.banner .inner button {
+section.container .banner .inner a {
+  display: inline-block;
   padding: 15px 20px;
   border-radius: 5px;
   background-color: white;
   color: #5f59f7;
 }
 
-.banner .inner button:hover {
+section.container .banner .inner a:hover {
   font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-  .banner {
+  section.container .banner .inner a {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.container .banner {
     padding: 30px 0;
   }
-  .banner .inner {
+  section.container .banner .inner {
     display: block;
   }
-  .banner .inner p {
+  section.container .banner .inner p {
     font-size: 1rem;
   }
-  .banner .inner button {
+  section.container .banner .inner button {
     margin-top: 10px;
     padding: 10px 15px;
   }
@@ -669,6 +684,435 @@ footer ul li a {
   color: white;
 }
 
+section.login {
+  height: calc(100% - 80px - 147px);
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  section.login {
+    height: calc(100% - 80px - 97px);
+  }
+}
+
+section.login .box {
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.login .box h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section.login .box form label {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+section.login .box form input {
+  width: 80%;
+  padding: 10px;
+  background-color: #8b98a7;
+  color: white;
+}
+
+section.login .box form input::-webkit-input-placeholder {
+  color: #fafafa;
+}
+
+section.login .box form input:-ms-input-placeholder {
+  color: #fafafa;
+}
+
+section.login .box form input::-ms-input-placeholder {
+  color: #fafafa;
+}
+
+section.login .box form input::placeholder {
+  color: #fafafa;
+}
+
+section.login .box button {
+  width: 100%;
+  margin: 20px 0 10px;
+  padding: 15px 10px;
+  background-color: #5f59f7;
+  color: white;
+}
+
+section.login .box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section.login .box ul li {
+  text-align: center;
+  padding-right: 10px;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+section.login .box ul li:last-child {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+section.login .box ul li:first-child:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 2px;
+  height: 80%;
+  background-color: #8b98a7;
+}
+
+section.work .title .title-slider {
+  margin: 80px auto;
+}
+
+section.work .title .title-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.work .title .title-slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 100px;
+  background-color: #8b98a7;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+section.work .title .title-slider .slick-dots li:last-child {
+  margin-right: 0;
+}
+
+section.work .title .title-slider .slick-dots li button {
+  display: none;
+}
+
+section.work .title .title-slider .slick-dots .slick-active {
+  width: 30px;
+  background-color: #5f59f7;
+}
+
+section.work .title .title-slider h3 {
+  text-align: left;
+  color: #5f59f7;
+}
+
+section.work .who {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  section.work .who {
+    margin-bottom: 60px;
+  }
+}
+
+section.work .who .inner .box {
+  margin-bottom: 30px;
+}
+
+section.work .who .inner .box:last-child {
+  margin-bottom: 0;
+}
+
+section.work .who .inner .box h4 {
+  margin: 10px 0;
+  position: relative;
+}
+
+section.work .who .inner .box h4 .emogi {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://unpkg.com/emoji-datasource-apple@5.0.1/img/apple/sheets-256/64.png");
+  background-size: 5700% 5700%;
+  background-position: 30.4% 41.1%;
+  position: relative;
+  top: 5px;
+}
+
+section.work .who .inner .box h4 .emogi2 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://unpkg.com/emoji-datasource-apple@5.0.1/img/apple/sheets-256/64.png");
+  background-size: 5700% 5700%;
+  background-position: 26.8% 91.1%;
+}
+
+section.work .who .inner .box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  section.work .who .inner .box ul {
+    display: block;
+  }
+}
+
+section.work .who .inner .box ul li {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5f59f7;
+  color: white;
+}
+
+section.work .who .inner .box ul li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  section.work .who .inner .box ul li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.work .who .inner .box ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+section.work .who .inner .box ul li span {
+  color: #c8db32;
+}
+
+section.work .how {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  section.work .how {
+    margin-bottom: 60px;
+  }
+}
+
+section.work .how .inner h3 {
+  margin-bottom: 20px;
+}
+
+section.work .how .inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+section.work .how .inner ul li {
+  width: 50%;
+  padding: 20px 30px;
+  background-color: #fafafa;
+  text-align: center;
+  cursor: pointer;
+}
+
+section.work .how .inner ul li:last-child {
+  border-left: none;
+}
+
+section.work .how .inner ul .tab-on {
+  background-color: #5f59f7;
+  color: white;
+}
+
+section.work .how .inner .contents {
+  position: relative;
+  overflow: hidden;
+}
+
+section.work .how .inner .contents > div {
+  background: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.work .how .inner .contents .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+section.work .how .inner .contents .box h4 {
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+section.work .how .inner .contents .box h4 .num {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 8px;
+  background-color: #5f59f7;
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  section.work .how .inner .contents .box {
+    display: block;
+  }
+  section.work .how .inner .contents .box h4 {
+    margin-bottom: 10px;
+  }
+}
+
+section.work .how .inner .contents-on {
+  position: absolute;
+  top: 0;
+}
+
+section.work .how .inner .contents-off {
+  position: absolute;
+  top: -100%;
+}
+
+section.ask {
+  margin: 120px 0;
+}
+
+@media screen and (max-width: 768px) {
+  section.ask {
+    margin: 60px 0;
+  }
+}
+
+section.ask h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section.ask p {
+  text-align: center;
+}
+
+section.ask form {
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  section.ask form {
+    width: 100%;
+  }
+}
+
+section.ask form label {
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  section.ask form label {
+    display: block;
+    width: 100%;
+  }
+}
+
+section.ask form label span {
+  color: #5f59f7;
+  font-weight: bold;
+}
+
+section.ask form label.text {
+  display: block;
+}
+
+section.ask form input {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #8b98a7;
+  color: white;
+}
+
+section.ask form input:last-child {
+  margin-bottom: 0;
+}
+
+section.ask form input::-webkit-input-placeholder {
+  color: #fafafa;
+}
+
+section.ask form input:-ms-input-placeholder {
+  color: #fafafa;
+}
+
+section.ask form input::-ms-input-placeholder {
+  color: #fafafa;
+}
+
+section.ask form input::placeholder {
+  color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  section.ask form input {
+    width: 100%;
+  }
+}
+
+section.ask form textarea {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #8b98a7;
+  color: white;
+}
+
+section.ask form button {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: #5f59f7;
+  color: white;
+}
+
 .black {
   position: fixed;
   top: 0;
@@ -681,99 +1125,7 @@ footer ul li a {
   z-index: 100;
 }
 
-.login {
-  height: calc(100% - 80px - 147px);
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .login {
-    height: calc(100% - 80px - 97px);
-  }
-}
-
-.login .box {
-  width: 90%;
-  max-width: 600px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.login .box h3 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.login .box form label {
-  display: inline-block;
-  width: 20%;
-  margin-bottom: 20px;
-}
-
-.login .box form input {
-  width: 80%;
-  padding: 10px;
-  background-color: #8b98a7;
-  color: white;
-}
-
-.login .box form input::-webkit-input-placeholder {
-  color: #fafafa;
-}
-
-.login .box form input:-ms-input-placeholder {
-  color: #fafafa;
-}
-
-.login .box form input::-ms-input-placeholder {
-  color: #fafafa;
-}
-
-.login .box form input::placeholder {
-  color: #fafafa;
-}
-
-.login .box button {
-  width: 100%;
-  margin: 20px 0 10px;
-  padding: 15px 10px;
-  background-color: #5f59f7;
-  color: white;
-}
-
-.login .box ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-}
-
-.login .box ul li {
-  text-align: center;
-  padding-right: 10px;
-  position: relative;
-  font-size: 0.8rem;
-}
-
-.login .box ul li:last-child {
-  padding-right: 0;
-  padding-left: 10px;
-}
-
-.login .box ul li:first-child:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 2px;
-  right: 0;
-  width: 2px;
-  height: 80%;
-  background-color: #8b98a7;
+.tab-on {
+  opacity: 1 !important;
 }
 /*# sourceMappingURL=main.css.map */

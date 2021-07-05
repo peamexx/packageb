@@ -52,10 +52,14 @@ h4 {
     font: {
         size: $font-md2;
     }
+    @media screen and (max-width: $tablet) {
+        font: {
+            size: $font-md1;
+        }
+    }
 }
 
 .inner {
-    // background-color: skyblue;
     width: 1000px;
     margin: auto;
     @media screen and (max-width: $pc) {
@@ -157,58 +161,40 @@ header {
     }
 }
 
-.visual {
-    height: 600px;
-    background-color: $navy;
-    color: $white;
-    @media screen and (max-width: $tablet){
-        height: 450px;
-        .inner {
-            ul {
-                left: 48%;
-                li {
-                    &:nth-child(2) {
-                        margin-bottom: 36px !important;
+section.container {
+    .visual {
+        height: 600px;
+        background-color: $navy;
+        color: $white;
+        @media screen and (max-width: $tablet){
+            height: 450px;
+            .inner {
+                ul {
+                    left: 48%;
+                    li {
+                        &:nth-child(2) {
+                            margin-bottom: 36px !important;
+                        }
+                    }
+                }
+                p,
+                ul li {
+                    font: {
+                    size: 2rem;
                     }
                 }
             }
-            p,
-            ul li {
-                font: {
-                size: 2rem;
-                }
-            }
         }
-    }
-    .inner {
-        height: 100%;
-        position: relative;
-        p {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font: {
-                size: $font-lg;
-                weight: bold;
-            }
-            @media screen and (max-width: $tablet) {
-                font: {
-                    size: 1.4rem !important;
-                }
-            }
-        }
-        ul {
-            position: absolute;
-            top: 50%;
-            left: 48.5%;
-            transform: translate(-50%, -50%);
-            li {
-                &:nth-child(2) {
-                    margin-bottom: 85px;
-                }
+        .inner {
+            height: 100%;
+            position: relative;
+            p {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 font: {
                     size: $font-lg;
                     weight: bold;
@@ -219,232 +205,260 @@ header {
                     }
                 }
             }
-        }
-        span {
-            color: $blue;
-        }
-    }
-}
-
-.title {
-    padding: 120px 0;
-    @media screen and (max-width: $tablet){
-        padding: 50px 0;
-    }
-    h3 {
-        text-align: center;
-    }
-    .emogi-box {
-        margin-bottom: 20px;
-        .emogi {
-            @include emogi-apple(67.9%, 64.3%);
-        }
-    }
-    .emogi-box2 {
-        margin-bottom: 50px;
-        .emogi {
-            @include emogi-apple(69.7%, 64.3%);
-        }
-    }
-}
-
-.service {
-    > section {
-        padding: 120px 0;
-        &:nth-child(2n-1) {
-            background-color: $lightgray;
-        }
-        @media screen and (max-width: $tablet){
-            padding: 60px 0;
-        }
-    }
-    .inner {
-        @include flex;
-        > div {
-            width: 50%;
-            &:first-child {
-                margin-right: 20px;
-            }
-        }
-        @media screen and (max-width: $tablet){
-            display: block;
-            > div {
-                width: 100%;
-            }
-        }
-    }
-    h4 {
-        color: $blue;
-    }
-    .text-v {
-        @media screen and (max-width: $tablet){
-            width: 100%;
-            text-align: center;
-        }
-        h4 {
-            margin-bottom: 10px;
-        }
-        p {
-            font: {
-                size: $font-md1;
-            }
-            @media screen and (max-width: $tablet){
-                font: {
-                    size: $font-df;
-                }
-            }
-        }
-    }
-    .sec1 {
-        .des-v {
-            width: 310px;
-            height: 278px;
-            background-image: url(../images/iphone-mockup-top.png);
-            background-size: 100%;
-            position: relative;
-            @media screen and (max-width: $tablet) {
-                width: 280px;
-                margin: auto;
-                margin-top: 20px;
-            }
-            dl {
-                width: 70%;
+            ul {
                 position: absolute;
-                top: 60%;
-                left: 50%;
+                top: 50%;
+                left: 48.5%;
                 transform: translate(-50%, -50%);
-                @media screen and (max-width: $tablet){
+                li {
+                    &:nth-child(2) {
+                        margin-bottom: 85px;
+                    }
                     font: {
-                        size: $font-sm;
+                        size: $font-lg;
+                        weight: bold;
+                    }
+                    @media screen and (max-width: $tablet) {
+                        font: {
+                            size: 1.4rem !important;
+                        }
                     }
                 }
-                dt {
-                    display: inline-block;
-                    width: 40%;
-                }
-                dd {
-                    display: inline-block;
-                    width: calc(60% - 5px);
-                    margin-bottom: 10px;
-                    padding: 5px;
-                    background-color: $gray;
-                    color: $white;
-                }
-            }
-        }
-    }
-    .sec2 {
-        .des-v {
-            .emogi {
-                @include emogi-apple(25%, 19.6%);
-            }
-            @media screen and (max-width: $tablet){
-                margin-bottom: 20px;
-                p {
-                    font: {
-                        size: $font-sm;
-                    }
-                }
-            }
-        }
-    }
-    .sec3 {
-        .des-v {
-            text-align: center;
-            li {
-                display: inline-block;
-                padding: 5px;
-                background-color: $white;
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px 0px;
-                text-align: center;
-                &:first-child {
-                    margin-bottom: 10px;
-                }
-                @media screen and (max-width: $tablet){
-                    font: {
-                        size: $font-sm;
-                    }
-                }
-            }
-        }
-        @media screen and (max-width: $tablet){
-            .text-v {
-                margin-bottom: 20px;
-            }
-        }
-    }
-    .sec4 {
-        .des-v {
-            p {
-                max-width: 350px;
-                margin: auto;
-                padding: 10px;
-                padding-left: 50px;
-                border-radius: 5px;
-                background-color: $gray;
-                position: relative;
-                @media screen and (max-width: $tablet){
-                    width: auto;
-                    margin-bottom: 20px;
-                    font: {
-                        size: $font-sm;
-                    }
-                }
-                .emogi {
-                    width: 25px !important;
-                    height: 25px !important;
-                    position: absolute;
-                    top: calc(50% - 12.5px);
-                    left: 10px;
-                    @include emogi-apple(23.2%, 50%);
-                }
-                .text {
-                    color: $lightgray;
-                }
-            }
-        }
-    }
-}
-
-.banner {
-    padding: 50px 0;
-    background-color: $blue;
-    .inner {
-        @include flex;
-        p {
-            color: $white;
-            word-break: keep-all;
-            font: {
-                size: $font-md1;
             }
             span {
-                text-decoration: underline;
+                color: $blue;
             }
         }
-        button {
-            padding: 15px 20px;
-            border-radius: 5px;
-            background-color: $white;
+    }
+    
+    .title {
+        padding: 120px 0;
+        @media screen and (max-width: $tablet){
+            padding: 50px 0;
+        }
+        h3 {
+            text-align: center;
+        }
+        .emogi-box {
+            margin-bottom: 20px;
+            .emogi {
+                @include emogi-apple(67.9%, 64.3%);
+            }
+        }
+        .emogi-box2 {
+            margin-bottom: 50px;
+            .emogi {
+                @include emogi-apple(69.7%, 64.3%);
+            }
+        }
+    }
+    
+    .service {
+        > section {
+            padding: 120px 0;
+            &:nth-child(2n-1) {
+                background-color: $lightgray;
+            }
+            @media screen and (max-width: $tablet){
+                padding: 60px 0;
+            }
+        }
+        .inner {
+            @include flex;
+            > div {
+                width: 50%;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+            @media screen and (max-width: $tablet){
+                display: block;
+                > div {
+                    width: 100%;
+                }
+            }
+        }
+        h4 {
             color: $blue;
-            &:hover {
+        }
+        .text-v {
+            @media screen and (max-width: $tablet){
+                width: 100%;
+                text-align: center;
+            }
+            h4 {
+                margin-bottom: 10px;
+            }
+            p {
                 font: {
-                    weight: bold;
+                    size: $font-md1;
+                }
+                @media screen and (max-width: $tablet){
+                    font: {
+                        size: $font-df;
+                    }
+                }
+            }
+        }
+        .sec1 {
+            .des-v {
+                width: 310px;
+                height: 278px;
+                background-image: url(../images/iphone-mockup-top.png);
+                background-size: 100%;
+                position: relative;
+                @media screen and (max-width: $tablet) {
+                    width: 280px;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+                dl {
+                    width: 70%;
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    @media screen and (max-width: $tablet){
+                        font: {
+                            size: $font-sm;
+                        }
+                    }
+                    dt {
+                        display: inline-block;
+                        width: 40%;
+                    }
+                    dd {
+                        display: inline-block;
+                        width: calc(60% - 5px);
+                        margin-bottom: 10px;
+                        padding: 5px;
+                        background-color: $gray;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .sec2 {
+            .des-v {
+                .emogi {
+                    @include emogi-apple(25%, 19.6%);
+                }
+                @media screen and (max-width: $tablet){
+                    margin-bottom: 20px;
+                    p {
+                        font: {
+                            size: $font-sm;
+                        }
+                    }
+                }
+            }
+        }
+        .sec3 {
+            .des-v {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    padding: 5px;
+                    background-color: $white;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px 0px;
+                    text-align: center;
+                    &:first-child {
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (max-width: $tablet){
+                        font: {
+                            size: $font-sm;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: $tablet){
+                .text-v {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .sec4 {
+            .des-v {
+                p {
+                    max-width: 350px;
+                    margin: auto;
+                    padding: 10px;
+                    padding-left: 50px;
+                    border-radius: 5px;
+                    background-color: $gray;
+                    position: relative;
+                    @media screen and (max-width: $tablet){
+                        width: auto;
+                        margin-bottom: 20px;
+                        font: {
+                            size: $font-sm;
+                        }
+                    }
+                    .emogi {
+                        width: 25px !important;
+                        height: 25px !important;
+                        position: absolute;
+                        top: calc(50% - 12.5px);
+                        left: 10px;
+                        @include emogi-apple(23.2%, 50%);
+                    }
+                    .text {
+                        color: $lightgray;
+                    }
                 }
             }
         }
     }
-    @media screen and (max-width: $tablet){
-        padding: 30px 0;
+    
+    .banner {
+        padding: 50px 0;
+        background-color: $blue;
         .inner {
-            display: block;
+            @include flex;
             p {
+                color: $white;
+                word-break: keep-all;
                 font: {
-                    size: $font-df;
+                    size: $font-md1;
+                }
+                span {
+                    color: $yellow;
+                    text-decoration: underline;
                 }
             }
-            button {
-                margin-top: 10px;
-                padding: 10px 15px;
+            a {
+                display: inline-block;
+                padding: 15px 20px;
+                border-radius: 5px;
+                background-color: $white;
+                color: $blue;
+                &:hover {
+                    font: {
+                        weight: bold;
+                    }
+                }
+                @media screen and (max-width: $tablet) {
+                    margin-top: 10px;
+                    font: {
+                        size: $font-sm;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: $tablet){
+            padding: 30px 0;
+            .inner {
+                display: block;
+                p {
+                    font: {
+                        size: $font-df;
+                    }
+                }
+                button {
+                    margin-top: 10px;
+                    padding: 10px 15px;
+                }
             }
         }
     }
@@ -529,19 +543,7 @@ footer {
     }
 }
 
-.black {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    pointer-events: none;
-    opacity: 0;
-    z-index: 100;
-}
-
-.login {
+section.login {
     height: calc(100% - 80px - 147px);
     position: relative;
     @media screen and (max-width: $tablet) {
@@ -611,4 +613,261 @@ footer {
             }
         }
     }
+}
+
+section.work {
+        .title {
+            .title-slider {
+                margin: 80px auto;
+                .slick-dots {
+                    display: flex;
+                    li {
+                        width: 10px;
+                        height: 10px;
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 100px;
+                        background-color: $gray;
+                        transition: all 0.5s ease;
+                        cursor: pointer;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        button {
+                            display: none;
+                        }
+                    }
+                    .slick-active {
+                        width: 30px;
+                        background-color: $blue;
+                    }
+                }
+                h3 {
+                    text-align: left;
+                    color: $blue;
+                }
+            }
+        }
+        .who {
+            margin-bottom: 120px;
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 60px;
+            }
+            .inner {
+                .box {
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    h4 {
+                        margin: 10px 0;
+                        position: relative;
+                        .emogi {
+                            width: 30px !important;
+                            height: 30px !important;
+                            margin-right: 10px;
+                            @include emogi-apple(30.4%, 41.1%);
+                            position: relative;
+                            top: 5px;
+                        }
+                        .emogi2 {
+                            @include emogi-apple(26.8%, 91.1%);
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        @media screen and (max-width: $tablet){
+                            display: block;
+                        }
+                        li {
+                            margin-right: 10px;
+                            padding: 10px;
+                            border-radius: 5px;
+                            background-color: $blue;
+                            color: $white;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            @media screen and (max-width: $tablet){
+                                width: 100%;
+                                margin-bottom: 10px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            span {
+                                color: $yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .how {
+            margin-bottom: 120px;
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 60px;
+            }
+            .inner {
+                h3 {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    margin: auto;
+                    margin-bottom: 30px;
+                    li {
+                        width: 50%;
+                        padding: 20px 30px;
+                        background-color: $lightgray;
+                        text-align: center;
+                        cursor: pointer;
+                        &:last-child {
+                            border-left: none;
+                        }
+                    }
+                    .tab-on {
+                        background-color: $blue;
+                        color: $white;
+                    }
+                }
+                .contents {
+                    position: relative;
+                    overflow: hidden;
+                    > div {
+                        background: $white;
+                        transition: all 0.5s ease;
+                    }
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        padding: 20px;
+                        border-radius: 5px;
+                        background-color: $lightgray;
+                        h4 {
+                            min-width: 180px;
+                            margin-right: 20px;
+                            .num {
+                                display: inline-block;
+                                margin-right: 10px;
+                                padding: 5px 8px;
+                                background-color: $blue;
+                                color: $white;
+                                font: {
+                                    size: $font-df;
+                                }
+                            }
+                        }
+                        @media screen and (max-width: $tablet) {
+                            display: block;
+                            h4 {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+                .contents-on {
+                    position: absolute;
+                    top: 0;
+                }
+                .contents-off {
+                    position: absolute;
+                    top: -100%;
+                }
+            }
+        }
+}
+
+section.ask {
+    margin: 120px 0;
+    @media screen and (max-width: $tablet) {
+        margin: 60px 0;
+    }
+    h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    form {
+        width: 500px;
+        margin: auto;
+        margin-top: 50px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+        label {
+            display: inline-block;
+            width: 20%;
+            text-align: left;
+            @media screen and (max-width: $tablet) {
+                display: block;
+                width: 100%;
+            }
+            span {
+                color: $blue;
+                font: {
+                    weight: bold;
+                }
+            }
+        }
+        label.text {
+            display: block;
+        }
+        input {
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: $gray;
+            color: $white;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::placeholder {
+                color: $lightgray;
+            }
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+        textarea {
+            outline: 0;
+            border: 0;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: $gray;
+            color: $white;
+        }
+        button {
+            width: 100%;
+            margin: auto;
+            margin-top: 30px;
+            padding: 15px 20px;
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}
+
+.black {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+}
+
+.tab-on {
+    opacity: 1 !important;
 }

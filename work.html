@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>기억해줄께! PackageB:패키집 : 로그인</title>
+    <title>기억해줄께! PackageB:패키집 : 서비스 안내</title>
     <!-- 해당 사이트는 포트폴리오용 사이트입니다 -->
     <!-- 진짜 존재하는 사이트가 아닙니다 -->
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script defer src="./src/js/script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -33,18 +36,108 @@
             </nav>
         </div>
     </header>
-    <section class="login">
-        <div class="box">
-            <h3>로그인</h3>
-            <form action="">
-                <label for="id">아이디</label><input name="id" type="text" placeholder="packageb" required="required">
-                <label for="pw">비밀번호</label><input name="pw" type="password" required="required">
-                <button type="submit" onclick="return false;">로그인</button>
-            </form>
-            <ul>
-                <li><a href="#" onclick="alert('서브 페이지를 제작하지 않았습니다')">아이디/비밀번호 찾기</a></li>
-                <li><a href="" onclick="alert('서브 페이지를 제작하지 않았습니다')">회원가입</a></li>
-            </ul>
+    <section class="work">
+        <div class="title">
+            <div class="inner">
+                <div class="title-slider">
+                    <div class="box">
+                        <h3>간편합니다.</h3>
+                        <p>물건 구매 후 바로 패키집에 적어두세요. 이름, 갯수, 옵션, 구매처, 날짜 등 다양한 정보를 기록하고 저장하세요.</p>
+                    </div>
+                    <div class="box">
+                        <h3>알아두세요.</h3>
+                        <p>기록한 내용을 바탕으로 작년 이맘때 쯤 내가 산 물건을 알려드립니다. 그러고보니 작년 이때 자라에서 여름맞이 세일로 옷을 17만원어치 사지 않으셨나요? 지금도
+                            세일하나
+                            가보세요!
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>공유하세요.</h3>
+                        <p>다른 사람들은 최근 어떤 물건을 샀을까? 공유된 기록을 보며 최근 트렌드 아이템을 찾아보고 구매해보세요.</p>
+                    </div>
+                    <div class="box">
+                        <h3>문열어주세요.</h3>
+                        <p>똑똑똑, 제안받기를 수락한 물건에 대해 해당 판매업자들이 직접 구매할 수 있는 링크를 보내드립니다. 나쁘지 않은 가격이라면 일일히 찾아볼 필요없이 바로 사면
+                            되겠죠?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="who">
+            <div class="inner">
+                <h3>혜택</h3>
+                <div class="box">
+                    <h4><span class="emogi"></span>사용자(개인)</h4>
+                    <ul>
+                        <li>고객님 본인이나 가족들이 산 물건들을 <span>한눈에 정리해서 손쉽게 파악하기</span></li>
+                        <li>다른 사람들이 산 물건을 구경하며 <span>추가 구매하기</span></li>
+                        <li>공개한 물건에 대해 판매자들에게 구매링크를 받아 <span>편리하게 구매하기</span></li>
+                    </ul>
+                </div>
+                <div class="box box-seller">
+                    <h4><span class="emogi emogi2"></span>판매자(개인/기업)</h4>
+                    <ul>
+                        <li>고객들이 산 물건을 보며 <span>댓글로 직접 판매 링크 전달하기</span></li>
+                        <li><span>월별/최신 구매 높은 아이템 확인하기</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="how">
+            <h2 class="hidden">사용방법</h2>
+            <div class="inner">
+                <h3>사용 방법</h3>
+                <ul>
+                    <li class="tab-on" data-sort="tab-user">고객님</li>
+                    <li data-sort="tab-seller">판매자님</li>
+                </ul>
+                <div class="contents">
+                    <div class="tab-user">
+                        <div class="box">
+                            <h4><span class="num">1</span>회원가입</h4>
+                            <p>먼저 고객님만의 계정을 만드세요. 아이디, 비밀번호, 휴대폰 번호 3가지로 간편하게 가입하시면 됩니다.</p>
+                        </div>
+                        <div class="box">
+                            <h4><span class="num">2</span>기록하기</h4>
+                            <p>로그인 후 마이페이지에 있는 [기록하기]를 누르세요. 기본 옵션이 있다면 선택, 아니라면 기타 옵션을 선택하여 기록해둬야할 아이템을 적어놓으세요. </p>
+                        </div>
+                        <div class="box">
+                            <h4><span class="num">3</span>수정/삭제하기</h4>
+                            <p>메뉴에 있는 [나의 기록]을 눌러보세요. 작성한 내역을 확인하고 수정, 삭제할 수 있습니다. 삭제 버튼 클릭 시 한번 더 여쭤볼테니 바로 지워질 걱정은 하지
+                                마세요!
+                            </p>
+                        </div>
+                        <div class="box">
+                            <h4><span class="num">4</span>구경하기</h4>
+                            <p>메뉴의 [구경하기]는 다른 사람들이 최근 기록한 아이템을 볼 수 있습니다. 패키집에서는 기록할때마다 비공개가 기본이니까 공개할만한, 자랑할만한 아이템이 있다면
+                                기록 시
+                                '공개하기'를 클릭하고 작성해보세요.</p>
+                        </div>
+                    </div>
+                    <div class="tab-seller contents-off">
+                        <div class="box">
+                            <h4><span class="num">1</span>회원가입</h4>
+                            <p>먼저 판매자님만의 계정을 만드세요. 가입할때 '판매자'를 선택해주세요!</p>
+                        </div>
+                        <div class="box">
+                            <h4><span class="num">2</span>판매하기</h4>
+                            <p>로그인 후 마이페이지에 있는 [판매하기]를 누르세요. 아이템 이름과 가격, 구매 링크 등을 입력하시면 됩니다.</p>
+                        </div>
+                        <div class="box">
+                            <h4><span class="num">3</span>수정/삭제하기</h4>
+                            <p>메뉴에 있는 [나의 기록]을 눌러보세요. 작성한 내역을 확인하고 수정, 삭제할 수 있습니다. 삭제 버튼 클릭 시 한번 더 여쭤볼테니 바로 지워질 걱정은 하지
+                                마세요!
+                            </p>
+                        </div>
+                        <div class="box">
+                            <h4><span class="num">4</span>구경하기</h4>
+                            <p>메뉴의 [구경하기]는 다른 사람들이 최근 기록한 아이템을 볼 수 있습니다. 댓글이 작성 가능한 기록에는 추천가격 댓글을 달 수 있습니다. [판매하기]에 추가한
+                                내역을 불러와 댓글을 달고 고객들에게 홍보해보세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <aside class="popup-tos">
@@ -94,7 +187,8 @@
                 <span class="popup-close material-icons material-icons-outlined">highlight_off</span>
             </div>
             <div class="contents">
-                <p><b>업비트 개인정보처리방침</b><br /><br /><b>제 1조 (목적)</b><br />이 약관은 두나무 주식회사(이하 "회사"라 합니다)가 제공하는 업비트 및 업비트 관련 제반
+                <p><b>업비트 개인정보처리방침</b><br /><br /><b>제 1조 (목적)</b><br />이 약관은 두나무 주식회사(이하 "회사"라 합니다)가 제공하는 업비트 및 업비트 관련
+                    제반
                     서비스의 이용에 대해 회사와 회원의 권리, 의무 및 책임 사항, 기타 필요한 사항을 규정함을 목적으로 합니다.<br /><br />
                     <b>제 2조 (정의)</b><br />
                     이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br /><br />
